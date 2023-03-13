@@ -8,5 +8,6 @@ curl --request POST \
 --header 'Authorization: Basic Y2xpZW50OnNlY3JldA=='
 ```
 
-- Do the same request again. At this point the inconsistency between the actual expiration 
-of the token and the `expires_in` property in the response is evident.
+- Make the same request again. At this point, the inconsistency between the store token's expiration 
+and the `expires_in` property in the response body is evident. Even though the token is the 
+same, the `expires_in` property doesn't change.
